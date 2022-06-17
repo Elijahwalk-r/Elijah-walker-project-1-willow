@@ -1,0 +1,38 @@
+.homeHeader{
+    background-color: $primary;
+    height: 70vh;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    position: relative;
+}
+
+.headerPosition{
+    height: fit-content;
+    position: relative;
+    align-self: center;
+    img{
+        position: absolute;
+        bottom: -40px;
+        left: -40px;
+    }
+}
+
+.headerImage{
+    max-width: 100%;
+}
+
+.headerBox{
+    position: absolute;
+    top:40px;
+    right: 200px;
+    height: 100%;
+    box-shadow: 10px 10px 0 $solidWhite;
+}
+
+header *{
+    border: 1px solid blue
+}

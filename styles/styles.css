@@ -255,7 +255,7 @@ p {
 
 .menu {
   font-weight: bold;
-  color: #f6f6f6;
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -278,7 +278,7 @@ h4 {
 
 h1 {
   font-size: 4rem;
-  color: #f6f6f6;
+  color: #fff;
   line-height: 92px;
 }
 
@@ -333,7 +333,6 @@ button {
   margin: 0 auto;
 }
 
-nav,
 header,
 section,
 article,
@@ -389,4 +388,55 @@ footer p {
 nav a:hover,
 :focus {
   color: #e4a436;
+}
+
+nav {
+  background-color: #345231;
+}
+
+.homeHeader {
+  background-color: #345231;
+  height: 70vh;
+}
+
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+  position: relative;
+}
+
+.headerPosition {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.headerPosition img {
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+}
+
+.headerImage {
+  max-width: 100%;
+}
+
+.headerBox {
+  position: absolute;
+  top: 40px;
+  right: 200px;
+  height: 100%;
+  -webkit-box-shadow: 10px 10px 0 #fff;
+          box-shadow: 10px 10px 0 #fff;
+}
+
+header * {
+  border: 1px solid blue;
 }

@@ -1,0 +1,44 @@
+.wrapper{
+    max-width: 1200px ;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav,
+header,
+section,
+article,
+aside{
+    margin-bottom: 60px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+nav a:hover,
+:focus{
+    color: $tertiary;
+}
+
+button{
+    margin: 0;
+    padding: 5px 15px;
+    color: $quinary;
+    background-color: $tertiary;
+    border: 1px solid $tertiary;
+}
+
+.homeIcon{
+    background-color: $tertiary;
+    border: 1px solid $tertiary;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p{
+    color: $solidWhite;
+}
+

@@ -248,6 +248,11 @@ body {
   font-size: 0.8rem;
 }
 
+p {
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
 .menu {
   font-weight: bold;
   color: #f6f6f6;
@@ -301,4 +306,65 @@ input {
 
 a {
   text-decoration: none;
+}
+
+button {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 32px;
+  font-family: "Abril Fatface", cursive;
+}
+
+.homeIcon {
+  color: #1f1f1f;
+  font-size: 0.9rem;
+}
+
+.contactIcon {
+  color: #345231;
+  font-size: 1.2rem;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav,
+header,
+section,
+article,
+aside {
+  margin-bottom: 60px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+nav a:hover,
+:focus {
+  color: #e4a436;
+}
+
+button {
+  margin: 0;
+  padding: 5px 15px;
+  color: #1f1f1f;
+  background-color: #e4a436;
+  border: 1px solid #e4a436;
+}
+
+.homeIcon {
+  background-color: #e4a436;
+  border: 1px solid #e4a436;
+  border-radius: 50%;
+  text-align: center;
+  padding: 15px;
+}
+
+footer p {
+  color: #fff;
 }

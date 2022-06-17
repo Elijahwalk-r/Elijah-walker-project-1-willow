@@ -11,6 +11,11 @@ body{
     font-size: 0.8rem;
 }
 
+p{
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
 .menu{
     font-weight: bold;
     color: $secondary;
@@ -61,4 +66,20 @@ input {
 }
 a{
     text-decoration: none;
+}
+
+button{
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 32px;
+    font-family: $headingFont;
+}
+
+.homeIcon{
+    color: $quinary;
+    font-size: 0.9rem;
+}
+.contactIcon{
+    color: $primary;
+    font-size: 1.2rem;
 }

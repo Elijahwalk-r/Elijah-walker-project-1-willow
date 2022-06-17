@@ -260,7 +260,9 @@ p {
 }
 
 .willowMenu {
-  font-size: 1.2rem;
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal;
+  font-size: 1.4rem;
 }
 
 h1,
@@ -344,11 +346,6 @@ img {
   display: block;
 }
 
-nav a:hover,
-:focus {
-  color: #e4a436;
-}
-
 button {
   margin: 0;
   padding: 5px 15px;
@@ -367,4 +364,29 @@ button {
 
 footer p {
   color: #fff;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navBar li {
+  margin: 15px;
+}
+
+.willowNav {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+nav a:hover,
+:focus {
+  color: #e4a436;
 }

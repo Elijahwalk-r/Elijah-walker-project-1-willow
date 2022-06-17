@@ -437,6 +437,31 @@ nav {
           box-shadow: 10px 10px 0 #fff;
 }
 
-header * {
-  border: 1px solid blue;
+.blogHeader {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+.headerText {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.headerText h1 {
+  margin-bottom: -17px;
+}
+
+.contactHeader {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
 }

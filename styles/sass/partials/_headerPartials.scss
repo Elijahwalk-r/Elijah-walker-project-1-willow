@@ -1,3 +1,4 @@
+// HOME Header Styles
 .homeHeader{
     background-color: $primary;
     height: 70vh;
@@ -33,6 +34,30 @@
     box-shadow: 10px 10px 0 $solidWhite;
 }
 
-header *{
-    border: 1px solid blue
+// BLOG Header Styles
+.blogHeader{
+    background-image: url(../assets/blog-image-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+.headerText{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    h1{
+        margin-bottom: -17px;
+    }
+}
+
+// CONTACT Header Styles
+
+.contactHeader{
+    background-image: url(../assets/contact-image-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
 }

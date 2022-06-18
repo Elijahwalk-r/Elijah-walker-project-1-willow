@@ -1,25 +1,73 @@
 .contactMain {
     background-color: burlywood;
-    height: 70vh;
-    *{
-        border: 1px solid red;
-    }
+    height: 55vh;
+    
     .contactContainer{
         height: 100%;
         display: flex;
         justify-content: space-between;
-    
     }
     .contactDetails{
-        height: 50%;
-        width: 25%;
+        margin-top: 5px;
+        background-color: $solidWhite;
+        height: 70%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding:50px 20px;
+        i{
+            margin-right: 25px;
+        }
+        p{
+            line-height: 4px;
+            color: #696969;
+        }
+        .infoEmail{
+            a{
+             color: black;
+             font-weight: bold;   
+            }
+            
+            margin: 30px 0;
+        }  
     }
-    form{
+
+    // FORM STYLES
+    
+}
+form{
         width: 72%;
     }
     fieldset{
         width: 100%;
         display: flex;
         flex-direction: column;
+        border: none;
     }
-}
+
+    .formInput{
+        display: flex;
+    }
+
+    .nameInput,
+    .emailInput{
+        width: 100%;
+        height: 50px;
+        padding: 20px;
+        border: none;
+    }
+    .name,
+    .email{
+        width: 50%; 
+        margin-bottom: 10px;
+    }
+    .name{
+        margin-right: 10px;
+    }
+
+    textarea{
+        margin-bottom: 10px;
+        padding: 20px;
+        resize: none;
+        border: none;
+    }

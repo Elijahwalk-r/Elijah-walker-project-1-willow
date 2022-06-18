@@ -59,17 +59,20 @@
             <div class="wrapper contactContainer">
                 <div class="contactDetails">
                     <!-- ICONS -->
-                    <i class="fa-brands fa-facebook-f contactIcon"></i>
-                    <i class="fa-brands fa-twitter contactIcon"></i>
-                    <i class="fa-brands fa-linkedin-in contactIcon"></i>
-                    <i class="fa-brands fa-instagram contactIcon"></i>
-                    <p>
-                        <a href="mailto:info@email.com">info@email.com</a>
-                    </p>
-                    <p>123 - 456 -7890</p>
-                    <p> 123 Queen Street West, Unit 10</p>
-                    <p>Toronto, Ontario</p>
-                    <p>M5V2D5</p>
+                    <div>
+                        <i class="fa-brands fa-facebook-f contactIcon"></i>
+                        <i class="fa-brands fa-twitter contactIcon"></i>
+                        <i class="fa-brands fa-linkedin-in contactIcon"></i>
+                        <i class="fa-brands fa-instagram contactIcon"></i>
+                    </div>
+                    <div>
+                        <p class="infoEmail"><a href="mailto:info@email.com">info@email.com</a></p>
+                        <p>123 - 456 -7890</p>
+                        <p> 123 Queen Street West, Unit 10</p>
+                        <p>Toronto, Ontario</p>
+                        <p>M5V2D5</p>
+                    </div>
+                    
                 </div>
 
                 <form action="">
@@ -78,12 +81,18 @@
                         <legend class="sr-only">
                             Message to Send Willow
                         </legend>
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="text" id="name" placeholder="Name">
-
-                        <label for="email" class="sr-only">Email</label>
-                        <input type="email" id="email" placeholder="Email">
-
+                        
+                        <div class="formInput">
+                            <div class="name">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" id="name" placeholder="Name" class="nameInput">
+                            </div>
+                            <div class="email">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" id="email" placeholder="Email address" class="emailInput">
+                            </div>
+                        </div>
+                    
                         <label for="message" class="sr-only">Message Me</label>
                         <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
 

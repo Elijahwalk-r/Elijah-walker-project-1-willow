@@ -465,3 +465,168 @@ nav {
   background-size: cover;
   height: 60vh;
 }
+
+.whosWillow {
+  background-color: lightcoral;
+  height: 50vh;
+}
+.whosWillow .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.infoSection {
+  background-color: burlywood;
+}
+
+.homeFirstGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.homeFirstGallery li {
+  width: 50%;
+}
+.homeFirstGallery .bridge {
+  background-color: #709b6b;
+  -webkit-box-shadow: 12px 10px 0px #709b6b, -110px 10px 0px #709b6b;
+          box-shadow: 12px 10px 0px #709b6b, -110px 10px 0px #709b6b;
+}
+.homeFirstGallery .lily {
+  background-color: #345231;
+  -webkit-box-shadow: 12px 10px 0px #345231, 110px 10px 0px #345231;
+          box-shadow: 12px 10px 0px #345231, 110px 10px 0px #345231;
+}
+.homeFirstGallery .sectionText1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.homeFirstGallery .hello {
+  width: 80%;
+}
+.homeFirstGallery .textAlign {
+  text-align: right;
+}
+
+.willowJourney {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightcoral;
+}
+.willowJourney .willowJourneyContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.willowJourney .willowJourneyContainer .journeyText {
+  width: 65%;
+}
+.willowJourney .willowJourneyContainer .journeyText .textItems {
+  height: 100%;
+}
+.willowJourney .willowJourneyContainer .yellow {
+  height: 100%;
+  width: 25%;
+  -webkit-box-shadow: 10px 10px 0 #709b6b;
+          box-shadow: 10px 10px 0 #709b6b;
+}
+.willowJourney .willowJourneyContainer .yellow img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.lemons {
+  background-color: burlywood;
+}
+.lemons .lemonFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.lemons .lemonFlex .lemonItems {
+  margin: 20px;
+}
+
+.infoIconSection {
+  height: 70vh;
+  background-color: lightcoral;
+}
+.infoIconSection ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.infoIconSection li {
+  width: calc(50% - 40px);
+  margin: 20px;
+}
+.infoIconSection .icon {
+  position: relative;
+}
+.infoIconSection i {
+  position: absolute;
+  left: -60px;
+  bottom: -6px;
+}
+
+footer {
+  height: 10vh;
+  background-color: #1f1f1f;
+  text-align: center;
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer a {
+  color: inherit;
+}
+footer a:hover, footer a:focus {
+  color: #e4a436;
+}

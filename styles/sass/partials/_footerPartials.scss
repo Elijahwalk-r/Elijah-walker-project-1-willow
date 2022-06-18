@@ -1,0 +1,18 @@
+footer{
+    height: 10vh;
+    background-color:$quinary;
+    text-align: center;
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        color: inherit;
+        &:hover,
+        &:focus{
+            color: $tertiary;
+        }
+    }
+}
+

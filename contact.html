@@ -54,10 +54,10 @@
     <!--START Main  -->
     <main>
         <!-- START Section -->
-        <section>
+        <section class="contactMain">
             <!-- START Wrapper -->
-            <div class="wrapper">
-                <div>
+            <div class="wrapper contactContainer">
+                <div class="contactDetails">
                     <!-- ICONS -->
                     <i class="fa-brands fa-facebook-f contactIcon"></i>
                     <i class="fa-brands fa-twitter contactIcon"></i>
@@ -73,16 +73,22 @@
                 </div>
 
                 <form action="">
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" id="name" placeholder="Name">
+                    <fieldset>
 
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email" placeholder="Email">
+                        <legend class="sr-only">
+                            Message to Send Willow
+                        </legend>
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
 
-                    <label for="message" class="sr-only">Message Me</label>
-                    <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="Email">
 
-                    <button type="submit" class="button formButton">Submit</button>
+                        <label for="message" class="sr-only">Message Me</label>
+                        <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                        <button type="submit" class="button formButton">Submit</button> 
+                    </fieldset>
                 </form>
             </div> 
              <!--END Wrapper  -->

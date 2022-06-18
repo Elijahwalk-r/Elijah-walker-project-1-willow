@@ -455,7 +455,7 @@ nav {
           align-items: flex-end;
 }
 .headerText h1 {
-  margin-bottom: -17px;
+  margin-bottom: -15px;
 }
 
 .contactHeader {
@@ -464,6 +464,29 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
+}
+
+footer {
+  height: 10vh;
+  background-color: #1f1f1f;
+  text-align: center;
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer a {
+  color: inherit;
+}
+footer a:hover, footer a:focus {
+  color: #e4a436;
 }
 
 .whosWillow {
@@ -608,25 +631,36 @@ nav {
   bottom: -6px;
 }
 
-footer {
-  height: 10vh;
-  background-color: #1f1f1f;
-  text-align: center;
+.contactMain {
+  background-color: burlywood;
+  height: 70vh;
 }
-footer .wrapper {
+.contactMain * {
+  border: 1px solid red;
+}
+.contactMain .contactContainer {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-footer a {
-  color: inherit;
+.contactMain .contactDetails {
+  height: 50%;
+  width: 25%;
 }
-footer a:hover, footer a:focus {
-  color: #e4a436;
+.contactMain form {
+  width: 72%;
+}
+.contactMain fieldset {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

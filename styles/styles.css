@@ -417,6 +417,7 @@ nav {
   position: relative;
   -ms-flex-item-align: center;
       align-self: center;
+  align-self: center;
 }
 .headerPosition img {
   position: absolute;
@@ -431,7 +432,7 @@ nav {
 .headerBox {
   position: absolute;
   top: 40px;
-  right: 200px;
+  right: 170px;
   height: 100%;
   -webkit-box-shadow: 10px 10px 0 #fff;
           box-shadow: 10px 10px 0 #fff;
@@ -491,9 +492,13 @@ footer a:hover, footer a:focus {
 
 .whosWillow {
   background-color: lightcoral;
-  height: 50vh;
+  height: 70vh;
 }
 .whosWillow .wrapper {
+  height: 100%;
+}
+.whosWillow .whosWillowContainer {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,6 +512,7 @@ footer a:hover, footer a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
 }
 
 .infoSection {
@@ -796,4 +802,81 @@ textarea {
 .blogArticleSection .blogForm form fieldset {
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .homeHeader .headerContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeHeader .headerContainer .headerPosition {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 30%;
+  }
+  .homeHeader .headerContainer .headerPosition img {
+    bottom: 10px;
+  }
+  .homeHeader .headerContainer .headerImage {
+    height: 70%;
+    max-width: 40%;
+    position: unset;
+  }
+  .homeHeader .headerContainer .headerImage img {
+    max-width: 100%;
+    max-height: 100%;
+    position: unset;
+  }
+
+  .homeFirstGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homeFirstGallery li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .homeFirstGallery .textAlign {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .homeFirstGallery .lily {
+    -webkit-box-shadow: 12px 10px 0px #345231, -110px 10px 0px #345231;
+            box-shadow: 12px 10px 0px #345231, -110px 10px 0px #345231;
+  }
+  .homeFirstGallery .lily img {
+    margin-left: auto;
+  }
+
+  .willowJourney {
+    height: 100vh;
+  }
+
+  .willowJourneyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .willowJourneyContainer .journeyText {
+    border: 1px solid blue;
+  }
+  .willowJourneyContainer .journeyText .textItems {
+    width: 100%;
+  }
+  .willowJourneyContainer .yellow {
+    margin-bottom: 20px;
+  }
 }

@@ -1,12 +1,17 @@
 // first section
 .whosWillow{
     background-color: lightcoral;
-    height: 50vh;
+    height: 70vh;
     .wrapper{
+        height: 100%;
+    }
+    .whosWillowContainer{
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10px;
     }
 }
 
@@ -67,8 +72,7 @@
             img{
                 width: 100%;
                 object-fit: cover;
-            }
-            
+            }     
         }
     }
 }

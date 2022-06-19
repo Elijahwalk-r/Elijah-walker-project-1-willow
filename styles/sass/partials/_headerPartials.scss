@@ -15,6 +15,7 @@
     height: fit-content;
     position: relative;
     align-self: center;
+    align-self: center;
     img{
         position: absolute;
         bottom: -40px;
@@ -29,7 +30,7 @@
 .headerBox{
     position: absolute;
     top:40px;
-    right: 200px;
+    right: 170px;
     height: 100%;
     box-shadow: 10px 10px 0 $solidWhite;
 }

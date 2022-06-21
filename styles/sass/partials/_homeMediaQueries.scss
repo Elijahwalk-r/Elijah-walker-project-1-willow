@@ -1,9 +1,6 @@
 @media (max-width: 1100px){
 // Header Queries
     .homeHeader{
-        // *{
-        //     border: 1px solid red;
-        // }
         .headerContainer{
                 width: 100%;
                 display: flex;
@@ -27,6 +24,12 @@
             } 
         }  
     }
+
+    // First section styles
+    .whosWillow{
+        height: 80vh;
+    }
+    
     
     // Home First Gallery Queries
     .homeFirstGallery{
@@ -55,7 +58,7 @@
         flex-direction: column;
         align-items: center;
         .journeyText{
-            border: 1px solid blue;
+            width: 100%;
             .textItems{
                 width: 100%;
             }
@@ -64,12 +67,52 @@
             margin-bottom: 20px;
         }
     }
+
+    // Last Section Media Queries
+    .infoIconSection{
+        height: 100%;
+        ul{
+            flex-direction: column;
+            li{
+                width: 80%;
+            }
+        }
+    }
+
+
 }
 
 @media (max-width: 720px){
-
+    //Second Gallery Section Queries
+        .lemonFlex {
+            flex-direction: column;
+            align-items: center;
+            li{
+                width: 70%;
+            }
+        }
+        .infoIconSection{
+            ul{
+                li {
+                    width: 65%;
+                    .homeIcon{
+                        padding: 10px;
+                        left: -50px;  
+                    }
+                }   
+            }
+        }
+            
 }
 
 @media (max-width: 320px){
-
+    .willowJourney{
+        .willowJourneyContainer{
+            .yellow{
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
 }

@@ -245,7 +245,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 p {
@@ -595,6 +595,10 @@ footer a:hover, footer a:focus {
      object-fit: cover;
 }
 
+aside img {
+  width: 100vw;
+}
+
 .lemons {
   background-color: burlywood;
 }
@@ -834,6 +838,10 @@ textarea {
     position: unset;
   }
 
+  .whosWillow {
+    height: 80vh;
+  }
+
   .homeFirstGallery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -871,12 +879,229 @@ textarea {
             align-items: center;
   }
   .willowJourneyContainer .journeyText {
-    border: 1px solid blue;
+    width: 100%;
   }
   .willowJourneyContainer .journeyText .textItems {
     width: 100%;
   }
   .willowJourneyContainer .yellow {
     margin-bottom: 20px;
+  }
+
+  .infoIconSection {
+    height: 100%;
+  }
+  .infoIconSection ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infoIconSection ul li {
+    width: 80%;
+  }
+}
+@media (max-width: 720px) {
+  .lemonFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .lemonFlex li {
+    width: 70%;
+  }
+
+  .infoIconSection ul li {
+    width: 65%;
+  }
+  .infoIconSection ul li .homeIcon {
+    padding: 10px;
+    left: -50px;
+  }
+}
+@media (max-width: 320px) {
+  .willowJourney .willowJourneyContainer .yellow img {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .blogArticleSection {
+    padding: 0 10px;
+  }
+  .blogArticleSection .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogArticleSection .wrapper .aboutWillowFlexContainer {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .blogArticleSection .wrapper .aboutWillowFlexContainer .willowFlexChild1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 6px solid #345231;
+  }
+  .blogArticleSection .wrapper .aboutWillowFlexContainer .willowFlexChild1 img {
+    width: 30%;
+  }
+  .blogArticleSection .wrapper .aboutWillowFlexContainer .willowFlexChild2 {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 0 30px 0;
+    border-bottom: 6px solid #345231;
+  }
+  .blogArticleSection .wrapper .blogTextFlexContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  .blogHeader {
+    height: 30vh;
+  }
+  .blogHeader .headerText h1 {
+    font-size: 3rem;
+    margin-left: 5px;
+  }
+
+  .blogTextFlexContainer h2 {
+    font-size: 1.8rem;
+  }
+  .blogTextFlexContainer .blogTextFlexChild2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .blogTextFlexContainer .blogTextFlexChild2 .barbDaisy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogTextFlexContainer .blogTextFlexChild2 .barbDaisy img {
+    width: 20%;
+  }
+  .blogTextFlexContainer .blogTextFlexChild2 .barbDaisy .barbDaisyDate {
+    margin-left: 0px;
+  }
+  .blogTextFlexContainer .blogForm {
+    padding: 0 10px;
+  }
+  .blogTextFlexContainer .blogForm .formInput {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogTextFlexContainer .blogForm .formInput .name,
+.blogTextFlexContainer .blogForm .formInput .email {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .blogHeader .headerText {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogHeader .headerText h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .contactMain {
+    height: 100vh;
+  }
+  .contactMain .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactMain .contactContainer .contactDetails {
+    width: 50%;
+    height: 40%;
+    padding: 40px 10px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 720px) {
+  .contactHeader {
+    height: 30vh;
+  }
+  .contactHeader .headerText h1 {
+    font-size: 3rem;
+    margin-left: 5px;
+  }
+
+  .contactMain .contactContainer .contactDetails {
+    width: 60%;
+  }
+  .contactMain .contactContainer .contactDetails i {
+    margin-right: 10px;
+  }
+  .contactMain .contactContainer .contactDetails p {
+    line-height: 18px;
+  }
+  .contactMain form {
+    width: 100%;
+  }
+  .contactMain form .formInput {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactMain form .formInput .name,
+.contactMain form .formInput .email {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .contactHeader .headerText {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactHeader .headerText h1 {
+    font-size: 2rem;
+    margin: 0;
   }
 }

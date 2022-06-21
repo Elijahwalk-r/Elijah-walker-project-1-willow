@@ -1,6 +1,6 @@
 // first section
 .whosWillow{
-    background-color: lightcoral;
+    background-color: $secondary;
     height: 70vh;
     .wrapper{
         height: 100%;
@@ -18,7 +18,7 @@
 // second section
 
 .infoSection{
-    background-color: burlywood;
+    background-color: $solidWhite;
 }
 .homeFirstGallery{
     display: flex; 
@@ -54,7 +54,7 @@
     height: 70vh;
     display: flex;
     align-items: center;
-    background-color: lightcoral;
+    background-color: $secondary;
     .willowJourneyContainer{
         width: 100%;
         display: flex;
@@ -87,7 +87,7 @@ aside{
 //FOURTH Section Styles
 
 .lemons{
-    background-color: burlywood;
+    background-color: $solidWhite;
     .lemonFlex{
         display: flex;
         .lemonItems{
@@ -99,8 +99,8 @@ aside{
 // FIFTH Section Styles
 
 .infoIconSection{
-    height: 70vh;
-    background-color:lightcoral;
+    height: 80vh;
+    background-color: $secondary;
     ul{
         display: flex;
         justify-content: center;

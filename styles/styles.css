@@ -235,10 +235,6 @@ html {
   overflow: hidden;
 }
 
-body {
-  background-color: rosybrown;
-}
-
 html {
   font-size: 125%;
 }
@@ -331,13 +327,6 @@ button {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-}
-
-header,
-section,
-article,
-aside {
-  margin-bottom: 60px;
 }
 
 img {
@@ -491,7 +480,7 @@ footer a:hover, footer a:focus {
 }
 
 .whosWillow {
-  background-color: lightcoral;
+  background-color: #f6f6f6;
   height: 70vh;
 }
 .whosWillow .wrapper {
@@ -516,7 +505,7 @@ footer a:hover, footer a:focus {
 }
 
 .infoSection {
-  background-color: burlywood;
+  background-color: #fff;
 }
 
 .homeFirstGallery {
@@ -566,7 +555,7 @@ footer a:hover, footer a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: lightcoral;
+  background-color: #f6f6f6;
 }
 .willowJourney .willowJourneyContainer {
   width: 100%;
@@ -600,7 +589,7 @@ aside img {
 }
 
 .lemons {
-  background-color: burlywood;
+  background-color: #fff;
 }
 .lemons .lemonFlex {
   display: -webkit-box;
@@ -612,8 +601,8 @@ aside img {
 }
 
 .infoIconSection {
-  height: 70vh;
-  background-color: lightcoral;
+  height: 80vh;
+  background-color: #f6f6f6;
 }
 .infoIconSection ul {
   display: -webkit-box;
@@ -641,8 +630,12 @@ aside img {
   bottom: -6px;
 }
 
+.contactBackground {
+  background-color: #f6f6f6;
+  padding: 60px 0 90px 0;
+}
+
 .contactMain {
-  background-color: burlywood;
   height: 55vh;
 }
 .contactMain .contactContainer {
@@ -728,6 +721,11 @@ textarea {
   padding: 20px;
   resize: none;
   border: none;
+}
+
+.blogBackground {
+  background-color: #f6f6f6;
+  padding: 40px 0;
 }
 
 .blogArticleSection .willowFlexChild1,

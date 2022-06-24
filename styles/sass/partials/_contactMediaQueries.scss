@@ -6,10 +6,19 @@
             justify-content: center;
             align-items: center;
             .contactDetails{
-                width: 50%;
-                height: 40%;
-                padding: 40px 10px;
+                width: 70%;
+                height: 25%;
+                padding: 30px 10px;
                 margin-bottom: 15px;
+                .address{
+                    height: 100%;
+                    line-height: 40px;
+                    .unit10 {
+                        display: inline-block;
+                        margin-top: 0;
+                    }
+                                    
+                }
             }  
         }  
     }
@@ -28,13 +37,7 @@
     .contactMain {
         .contactContainer {
             .contactDetails {
-               width: 60%;
-               i{
-                margin-right: 10px;
-               }
-               p{
-                line-height: 18px;
-               }
+               width: 90%; 
             }
         }
         form {
@@ -44,13 +47,14 @@
                     .name,
                     .email {
                         width: 100%;
+                        margin-right: 0;
                     }
             }
         }
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .contactHeader {
             .headerText {
                 justify-content: center;
@@ -60,6 +64,12 @@
                     margin: 0;
                 }
             }
-        }
-   
+    }
+    .contactDetails {            
+            .address {
+                .unit10 {
+                    color: red;
+                }
+            }
+    }
 }

@@ -412,8 +412,7 @@ nav :focus {
   background-color: #345231;
   height: 70vh;
 }
-
-.headerContainer {
+.homeHeader .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,8 +422,7 @@ nav :focus {
   height: 100%;
   position: relative;
 }
-
-.headerPosition {
+.homeHeader .headerContainer .headerPosition {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -433,20 +431,18 @@ nav :focus {
       align-self: center;
   align-self: center;
 }
-.headerPosition img {
+.homeHeader .headerContainer .headerPosition img {
   position: absolute;
   bottom: -40px;
   left: -40px;
 }
-
-.headerImage {
+.homeHeader .headerContainer .headerImage {
   max-width: 100%;
 }
-
-.headerBox {
+.homeHeader .headerContainer .headerImage .headerBox {
   position: absolute;
   top: 40px;
-  right: 170px;
+  right: 20px;
   height: 100%;
   -webkit-box-shadow: 10px 10px 0 #fff;
           box-shadow: 10px 10px 0 #fff;
@@ -675,26 +671,35 @@ aside img {
           flex-direction: column;
   padding: 50px 20px;
 }
-.contactMain .contactDetails i {
+.contactMain .contactDetails .contactIcons {
+  height: 10%;
+}
+.contactMain .contactDetails .contactIcons i {
   margin-right: 25px;
 }
-.contactMain .contactDetails p {
+.contactMain .contactDetails .address {
+  height: 100%;
+  line-height: 40px;
+}
+.contactMain .contactDetails .address .unit10 {
+  display: inline-block;
+  margin-top: 18px;
+}
+.contactMain .contactDetails .address p {
   line-height: 4px;
   color: #696969;
 }
-.contactMain .contactDetails .infoEmail {
+.contactMain .contactDetails .address .infoEmail {
   margin: 30px 0;
 }
-.contactMain .contactDetails .infoEmail a {
+.contactMain .contactDetails .address .infoEmail a {
   color: black;
   font-weight: bold;
 }
-
-form {
+.contactMain form {
   width: 72%;
 }
-
-fieldset {
+.contactMain fieldset {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,32 +710,27 @@ fieldset {
           flex-direction: column;
   border: none;
 }
-
-.formInput {
+.contactMain .formInput {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.nameInput,
-.emailInput {
+.contactMain .nameInput,
+.contactMain .emailInput {
   width: 100%;
   height: 50px;
   padding: 20px;
   border: none;
 }
-
-.name,
-.email {
+.contactMain .name,
+.contactMain .email {
   width: 50%;
   margin-bottom: 10px;
 }
-
-.name {
+.contactMain .name {
   margin-right: 10px;
 }
-
-textarea {
+.contactMain textarea {
   margin-bottom: 10px;
   padding: 20px;
   resize: none;
@@ -825,32 +825,37 @@ textarea {
 
 @media (max-width: 1100px) {
   .homeHeader .headerContainer {
-    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homeHeader .headerContainer .headerPosition {
+    margin-top: 40px;
+  }
+  .homeHeader .headerContainer .headerImage {
+    position: unset;
+    -ms-flex-item-align: center;
+        align-self: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .homeHeader .headerContainer .headerPosition {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 30%;
-  }
-  .homeHeader .headerContainer .headerPosition img {
-    bottom: 10px;
-  }
-  .homeHeader .headerContainer .headerImage {
+    margin-top: 30px;
     height: 70%;
-    max-width: 40%;
-    position: unset;
+    width: 50%;
   }
-  .homeHeader .headerContainer .headerImage img {
-    max-width: 100%;
-    max-height: 100%;
+  .homeHeader .headerContainer .headerImage .headerBox {
     position: unset;
+    height: 80%;
   }
 
   .whosWillow {
@@ -945,7 +950,7 @@ textarea {
     left: -50px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .willowJourney .willowJourneyContainer .yellow img {
     display: none;
   }
@@ -1044,7 +1049,7 @@ textarea {
     width: 100%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .blogHeader .headerText {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1075,10 +1080,18 @@ textarea {
             align-items: center;
   }
   .contactMain .contactContainer .contactDetails {
-    width: 50%;
-    height: 40%;
-    padding: 40px 10px;
+    width: 70%;
+    height: 25%;
+    padding: 30px 10px;
     margin-bottom: 15px;
+  }
+  .contactMain .contactContainer .contactDetails .address {
+    height: 100%;
+    line-height: 40px;
+  }
+  .contactMain .contactContainer .contactDetails .address .unit10 {
+    display: inline-block;
+    margin-top: 0;
   }
 }
 @media (max-width: 720px) {
@@ -1091,13 +1104,7 @@ textarea {
   }
 
   .contactMain .contactContainer .contactDetails {
-    width: 60%;
-  }
-  .contactMain .contactContainer .contactDetails i {
-    margin-right: 10px;
-  }
-  .contactMain .contactContainer .contactDetails p {
-    line-height: 18px;
+    width: 90%;
   }
   .contactMain form {
     width: 100%;
@@ -1111,9 +1118,10 @@ textarea {
   .contactMain form .formInput .name,
 .contactMain form .formInput .email {
     width: 100%;
+    margin-right: 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .contactHeader .headerText {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1125,5 +1133,9 @@ textarea {
   .contactHeader .headerText h1 {
     font-size: 2rem;
     margin: 0;
+  }
+
+  .contactDetails .address .unit10 {
+    color: red;
   }
 }

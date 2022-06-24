@@ -18,9 +18,20 @@
         display: flex;
         flex-direction: column;
         padding:50px 20px;
-        i{
+        .contactIcons{
+            height: 10%;
+            i{
             margin-right: 25px;
+            }
         }
+        .address {
+            height: 100%;
+            line-height: 40px;            
+            .unit10 {
+                display: inline-block;
+                margin-top: 18px;
+            }
+       
         p{
             line-height: 4px;
             color: #696969;
@@ -74,3 +85,4 @@ form{
         resize: none;
         border: none;
     }
+}    

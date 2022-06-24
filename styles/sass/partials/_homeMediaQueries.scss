@@ -6,7 +6,7 @@
             flex-direction: column;
             justify-content: center;
             .headerPosition{
-                margin-top: 40px;
+                margin-top: 70px;
             }
             .headerImage{
                 position: unset;
@@ -16,7 +16,7 @@
                 align-items: center;
                 margin-top: 30px;
                 height: 70%;
-                width: 50%;
+                width: 60%;
                 .headerBox{
                     position: unset;
                     height: 80%;
@@ -80,7 +80,19 @@
     }
 }
 
-@media (max-width: 720px){
+@media (max-width: 720px){    
+    .homeHeader{
+        .headerContainer{
+            .headerPosition{
+                .musings{
+                    left:-26px;
+                }
+                h1{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
     // Nav Media Queries
     nav{
         .navBar{
@@ -108,7 +120,7 @@
     }           
 }
 
-@media (max-width: 360px){
+@media (max-width: 376px){
     .willowJourney{
         .willowJourneyContainer{
             .yellow{

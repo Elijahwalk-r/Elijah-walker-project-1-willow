@@ -1,0 +1,53 @@
+form {
+    width: 72%;
+    .formButton:hover,
+        :focus {
+            border: 2px solid black;
+        }
+        input[type="text"],
+        input[type="email"],
+        .textAreaColor {
+            color: black;
+        }
+}
+
+.formButton:active {
+    background-color: $primary;
+    color: $tertiary;
+}
+
+fieldset {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.formInput {
+    display: flex;
+}
+
+.nameInput,
+.emailInput {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    border: none;
+}
+
+.name,
+.email {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.name {
+    margin-right: 10px;
+}
+
+textarea {
+    margin-bottom: 10px;
+    padding: 20px;
+    resize: none;
+    border: none;
+}

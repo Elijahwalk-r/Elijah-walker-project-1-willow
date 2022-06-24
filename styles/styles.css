@@ -360,20 +360,6 @@ button {
   color: #e4a436;
 }
 
-form .formButton:hover, form :focus {
-  border: 2px solid black;
-}
-form input[type=text],
-form input[type=email],
-form .textAreaColor {
-  color: black;
-}
-
-.formButton:active {
-  background-color: #345231;
-  color: #e4a436;
-}
-
 .homeIcon {
   background-color: #e4a436;
   border: 1px solid #e4a436;
@@ -475,6 +461,67 @@ nav :focus {
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
+}
+
+form {
+  width: 72%;
+}
+form .formButton:hover,
+form :focus {
+  border: 2px solid black;
+}
+form input[type=text],
+form input[type=email],
+form .textAreaColor {
+  color: black;
+}
+
+.formButton:active {
+  background-color: #345231;
+  color: #e4a436;
+}
+
+fieldset {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+}
+
+.formInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nameInput,
+.emailInput {
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  border: none;
+}
+
+.name,
+.email {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.name {
+  margin-right: 10px;
+}
+
+textarea {
+  margin-bottom: 10px;
+  padding: 20px;
+  resize: none;
+  border: none;
 }
 
 footer {
@@ -685,56 +732,16 @@ aside img {
   display: inline-block;
   margin-top: 18px;
 }
-.contactMain .contactDetails .address p {
+.contactMain .contactDetails p {
   line-height: 4px;
   color: #696969;
 }
-.contactMain .contactDetails .address .infoEmail {
+.contactMain .contactDetails .infoEmail {
   margin: 30px 0;
 }
-.contactMain .contactDetails .address .infoEmail a {
+.contactMain .contactDetails .infoEmail a {
   color: black;
   font-weight: bold;
-}
-.contactMain form {
-  width: 72%;
-}
-.contactMain fieldset {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: none;
-}
-.contactMain .formInput {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.contactMain .nameInput,
-.contactMain .emailInput {
-  width: 100%;
-  height: 50px;
-  padding: 20px;
-  border: none;
-}
-.contactMain .name,
-.contactMain .email {
-  width: 50%;
-  margin-bottom: 10px;
-}
-.contactMain .name {
-  margin-right: 10px;
-}
-.contactMain textarea {
-  margin-bottom: 10px;
-  padding: 20px;
-  resize: none;
-  border: none;
 }
 
 .blogBackground {
@@ -834,7 +841,7 @@ aside img {
             justify-content: center;
   }
   .homeHeader .headerContainer .headerPosition {
-    margin-top: 40px;
+    margin-top: 70px;
   }
   .homeHeader .headerContainer .headerImage {
     position: unset;
@@ -851,7 +858,7 @@ aside img {
             align-items: center;
     margin-top: 30px;
     height: 70%;
-    width: 50%;
+    width: 60%;
   }
   .homeHeader .headerContainer .headerImage .headerBox {
     position: unset;
@@ -922,6 +929,13 @@ aside img {
   }
 }
 @media (max-width: 720px) {
+  .homeHeader .headerContainer .headerPosition .musings {
+    left: -26px;
+  }
+  .homeHeader .headerContainer .headerPosition h1 {
+    font-size: 3rem;
+  }
+
   nav .navBar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -950,7 +964,7 @@ aside img {
     left: -50px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 376px) {
   .willowJourney .willowJourneyContainer .yellow img {
     display: none;
   }

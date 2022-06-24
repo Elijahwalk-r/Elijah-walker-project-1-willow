@@ -323,6 +323,18 @@ button {
   font-size: 1.3rem;
 }
 
+.skip-link {
+  position: absolute;
+  left: -2000px;
+  top: 10px;
+  background-color: #345231;
+  color: #e4a436;
+  z-index: 10;
+}
+.skip-link:focus {
+  left: 0;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 100%;
@@ -374,7 +386,10 @@ footer p {
   color: #fff;
 }
 
-.navBar {
+nav {
+  background-color: #345231;
+}
+nav .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,22 +400,12 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
 }
-.navBar li {
+nav .navBar li {
   margin: 15px;
 }
-
-.willowNav {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
 nav a:hover,
-:focus {
+nav :focus {
   color: #e4a436;
-}
-
-nav {
-  background-color: #345231;
 }
 
 .homeHeader {
@@ -912,6 +917,13 @@ textarea {
   }
 }
 @media (max-width: 720px) {
+  nav .navBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .lemonFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -994,7 +1006,7 @@ textarea {
     height: 30vh;
   }
   .blogHeader .headerText h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-left: 5px;
   }
 

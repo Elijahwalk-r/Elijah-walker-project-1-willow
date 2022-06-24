@@ -1,21 +1,16 @@
-.navBar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    li{
-        margin:15px;
+nav{
+    background-color: $primary;
+    .navBar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin:15px;
+        }
+    }
+    a:hover,
+    :focus {
+        color: $tertiary;
     }
 }
 
-.willowNav{
-    align-self: flex-start;
-}
-
-nav a:hover,
-:focus {
-    color: $tertiary;
-}
-
-nav{
-    background-color: $primary;
-}

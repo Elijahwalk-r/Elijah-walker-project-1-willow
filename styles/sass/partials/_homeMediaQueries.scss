@@ -30,7 +30,6 @@
         height: 80vh;
     }
     
-    
     // Home First Gallery Queries
     .homeFirstGallery{
         flex-direction: column;
@@ -83,26 +82,31 @@
 }
 
 @media (max-width: 720px){
-    //Second Gallery Section Queries
-        .lemonFlex {
+    // Nav Media Queries
+    nav{
+        .navBar{
             flex-direction: column;
-            align-items: center;
-            li{
-                width: 70%;
-            }
         }
-        .infoIconSection{
-            ul{
-                li {
-                    width: 65%;
-                    .homeIcon{
-                        padding: 10px;
-                        left: -50px;  
-                    }
-                }   
-            }
+    }
+    //Second Gallery Section Queries
+    .lemonFlex {
+        flex-direction: column;
+        align-items: center;
+        li{
+            width: 70%;
         }
-            
+    }
+    .infoIconSection{
+        ul{
+            li {
+                width: 65%;
+                .homeIcon{
+                    padding: 10px;
+                    left: -50px;  
+                }
+            }   
+        }
+    }           
 }
 
 @media (max-width: 320px){

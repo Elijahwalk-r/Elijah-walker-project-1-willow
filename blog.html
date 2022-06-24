@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- style sheet link -->
-    <link rel="stylesheet" href="./styles/styles.css">
 
     <!-- font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap"rel="stylesheet">
+
+    <!-- style sheet link -->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+
 
     <!-- Font Awesome Links for ICONS -->
     <script src="https://kit.fontawesome.com/e7cdbb2aec.js" crossorigin="anonymous"></script>
@@ -27,7 +30,7 @@
                     <a href="./index.html" class="menu">Home</a>
                 </li>
                 <li>
-                    <a href="" class="menu">About</a>
+                    <a href="./index.html#about" class="menu">About</a>
                 </li>
                 <li>
                     <a href="./index.html" class="menu willowMenu">Willow</a>
@@ -54,7 +57,7 @@
     <!-- END Header -->
 
     <!--START Main  -->
-    <main class="blogBackground">
+    <main class="blogBackground" id="readMore">
         <!-- START Article -->
         <article class="blogArticleSection">
             <div class="wrapper">
@@ -65,8 +68,8 @@
                         <h4>About Willow</h4>
 
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae doloribus reiciendis elementum, erat. 
-                            <span>
-                                <a href="">Find out more.</a>
+                            <span  class="blogFindOutMore">
+                                <a href="./index.html">Find out more.</a>
                             </span>
                         </p>
                     </div>
@@ -142,10 +145,9 @@
                                     </div>
                                     
                                 </div>
-                            
                                 
                                 <label for="message" class="sr-only">Message Me</label>
-                                <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                <textarea id="message" cols="30" rows="10" placeholder="Message" class="textAreaColor"></textarea>
                                 
                                 <button type="submit" class="button formButton">Post Comment</button>
                             </fieldset>

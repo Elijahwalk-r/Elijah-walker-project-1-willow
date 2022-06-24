@@ -342,6 +342,26 @@ button {
   border: 1px solid #e4a436;
 }
 
+.willowButtons button:hover, .willowButtons :focus {
+  border: 1px solid #345231;
+  background-color: #345231;
+  color: #e4a436;
+}
+
+form .formButton:hover, form :focus {
+  border: 2px solid black;
+}
+form input[type=text],
+form input[type=email],
+form .textAreaColor {
+  color: black;
+}
+
+.formButton:active {
+  background-color: #345231;
+  color: #e4a436;
+}
+
 .homeIcon {
   background-color: #e4a436;
   border: 1px solid #e4a436;
@@ -457,20 +477,9 @@ nav {
 }
 
 footer {
-  height: 10vh;
+  border: 1px solid #1f1f1f;
   background-color: #1f1f1f;
   text-align: center;
-}
-footer .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 footer a {
   color: inherit;
@@ -762,6 +771,9 @@ textarea {
 .blogArticleSection .aboutWillowFlexContainer .willowFlexChild1 a {
   color: #345231;
   font-weight: bold;
+}
+.blogArticleSection .aboutWillowFlexContainer .willowFlexChild1 a:hover, .blogArticleSection .aboutWillowFlexContainer .willowFlexChild1 :focus {
+  color: #e4a436;
 }
 .blogArticleSection .aboutWillowFlexContainer .willowFlexChild2 {
   padding: 10px;

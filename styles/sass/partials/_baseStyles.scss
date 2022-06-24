@@ -17,6 +17,30 @@ button{
     border: 1px solid $tertiary;
 }
 
+.willowButtons{
+    button:hover, :focus{
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: $tertiary;
+}  
+} 
+
+form{
+   .formButton:hover, :focus{
+    border: 2px solid black;
+    } 
+    input[type="text"],
+    input[type="email"],
+    .textAreaColor{
+        color: black;
+    }
+}
+
+.formButton:active {
+    background-color: $primary;
+    color: $tertiary;
+    }
+
 .homeIcon{
     background-color: $tertiary;
     border: 1px solid $tertiary;

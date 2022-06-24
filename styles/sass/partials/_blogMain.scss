@@ -32,6 +32,9 @@
                color: $primary;
                font-weight: bold;
             }
+            a:hover,:focus{
+              color: $tertiary;
+            }
         }
         .willowFlexChild2{
             padding: 10px;

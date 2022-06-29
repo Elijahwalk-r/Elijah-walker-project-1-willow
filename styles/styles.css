@@ -1193,3 +1193,13 @@ aside img {
     color: red;
   }
 }
+.blogTextFlexChild2 img {
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+.blogTextFlexChild2 img:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}

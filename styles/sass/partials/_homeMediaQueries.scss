@@ -30,7 +30,6 @@
     .whosWillow{
         height: 80vh;
     }
-    
     // Home First Gallery Queries
     .homeFirstGallery{
         flex-direction: column;
@@ -96,15 +95,14 @@
     }
     // Nav Media Queries
     nav{
-  
         .showMe{
             display: inline-block;
         }
+    
         .navBar{
             flex-direction: column;
             justify-content: center;
         }
-        
         .slideOut {
             position: fixed;
             width: 40%;
@@ -112,7 +110,6 @@
             background-color: $primary;
             height: 100vh;
         }
-        
         .slideOut li{
             width: 100%;
            
@@ -124,14 +121,10 @@
             font-size: 1.6rem;
             
         }
-    
         input[type="checkbox"]:checked+.slideOut {
             left: 0;
             z-index: 4;
         }
-    
-        
-    
         label[for="toggle"] {
             position: fixed;
             color: $tertiary;

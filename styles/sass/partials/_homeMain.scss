@@ -29,11 +29,13 @@
     }
     .bridge{
         background-color: $quaternary;
-        box-shadow: 12px 10px 0px $quaternary, -110px 10px 0px $quaternary,
+        box-shadow: 12px 10px 0px $quaternary, -110px 10px 0px $quaternary;
+        
+       
     }
     .lily{
         background-color: $primary;
-        box-shadow: 12px 10px 0px $primary, 110px 10px 0px $primary,
+        box-shadow: 12px 10px 0px $primary, 110px 10px 0px $primary;
     }
 
     .sectionText1{
@@ -91,7 +93,7 @@ aside{
     .lemonFlex{
         display: flex;
         .lemonItems{
-            margin: 20px;
+            margin: 20px;            
         }
     }
 }

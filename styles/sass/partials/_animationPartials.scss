@@ -1,0 +1,10 @@
+
+// Blog Page Transitions
+.blogTextFlexChild2 {
+   img {
+       transition: transform 0.8s;
+   }
+   img:hover {
+       transform: scale(2);
+   }
+}

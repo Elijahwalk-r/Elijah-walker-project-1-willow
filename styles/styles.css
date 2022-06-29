@@ -337,7 +337,7 @@ button {
 
 .wrapper {
   max-width: 1200px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -392,6 +392,9 @@ nav .navBar li {
 nav a:hover,
 nav :focus {
   color: #e4a436;
+}
+nav .hideMe {
+  display: none;
 }
 
 .homeHeader {
@@ -929,18 +932,55 @@ aside img {
   }
 }
 @media (max-width: 720px) {
+  .homeHeader .headerContainer .headerPosition {
+    z-index: 6;
+  }
   .homeHeader .headerContainer .headerPosition .musings {
-    left: -26px;
+    left: -29px;
   }
   .homeHeader .headerContainer .headerPosition h1 {
     font-size: 3rem;
   }
 
+  nav .showMe {
+    display: inline-block;
+  }
   nav .navBar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .slideOut {
+    position: fixed;
+    width: 40%;
+    right: -40%;
+    background-color: #345231;
+    height: 100vh;
+  }
+  nav .slideOut li {
+    width: 100%;
+  }
+  nav .slideOut a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.6rem;
+  }
+  nav input[type=checkbox]:checked + .slideOut {
+    left: 0;
+    z-index: 4;
+  }
+  nav label[for=toggle] {
+    position: fixed;
+    color: #e4a436;
+    top: 10px;
+    left: 15px;
+    z-index: 5;
+    font-size: 3rem;
   }
 
   .lemonFlex {

@@ -12,5 +12,10 @@ nav{
     :focus {
         color: $tertiary;
     }
+
+    .hideMe{
+        display: none;
+    }
+
 }
 

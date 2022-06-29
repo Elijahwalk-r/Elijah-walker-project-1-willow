@@ -84,8 +84,9 @@
     .homeHeader{
         .headerContainer{
             .headerPosition{
+                z-index: 6;
                 .musings{
-                    left:-26px;
+                    left:-29px;
                 }
                 h1{
                     font-size: 3rem;
@@ -95,10 +96,53 @@
     }
     // Nav Media Queries
     nav{
+  
+        .showMe{
+            display: inline-block;
+        }
         .navBar{
             flex-direction: column;
+            justify-content: center;
+        }
+        
+        .slideOut {
+            position: fixed;
+            width: 40%;
+            right: -40%;
+            background-color: $primary;
+            height: 100vh;
+        }
+        
+        .slideOut li{
+            width: 100%;
+           
+        }
+        .slideOut a {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            font-size: 1.6rem;
+            
+        }
+    
+        input[type="checkbox"]:checked+.slideOut {
+            left: 0;
+            z-index: 4;
+        }
+    
+        
+    
+        label[for="toggle"] {
+            position: fixed;
+            color: $tertiary;
+            top: 10px;
+            left: 15px;
+            z-index: 5;
+            font-size: 3rem;
         }
     }
+
+        
     //Second Gallery Section Queries
     .lemonFlex {
         flex-direction: column;

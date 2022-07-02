@@ -23,12 +23,6 @@
         }
     }
     // END Home Header Queries
-        
-    // First section styles
-    .whosWillow{
-        height: 80vh;
-    }
-    // END First Section Styles
 
     // Home First Gallery Queries
     .homeFirstGallery{
@@ -50,7 +44,10 @@
 
     // Willows Journey Section Queries
     .willowJourney{
-        height: 100vh;
+        height: 80vh;
+    }
+    .journeyText{
+        margin-top: 15px;
     }
 
     .willowJourneyContainer{
@@ -85,18 +82,37 @@
         .showMe{
             display: inline-block;
         }
-        
+        input{
+            position: absolute;
+            right: 0;
+        }
         .navBar{
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+        }  
+        
+        input[type="checkbox"]:checked+.slideOut {
+            right: 0;
+            z-index: 4;
         }
+
+        label[for="toggle"]{
+            position: fixed;
+            color: $tertiary;
+            top: 10px;
+            right: 15px;
+            z-index: 5;
+            font-size: 3rem;
+        }
+       
         .slideOut {
             position: fixed;
             width: 40%;
             right: -40%;
             background-color: $primary;
+            opacity: 0.95;
             height: 100vh;
+            transition: 0.6s;   
         }
         .slideOut li{
             width: 100%;       
@@ -105,19 +121,7 @@
             display: inline-block;
             width: 100%;
             padding: 10px;
-            font-size: 1.6rem;
-        }
-        input[type="checkbox"]:checked+.slideOut {
-            right: 0;
-            z-index: 4;
-        }
-        label[for="toggle"] {
-            position: fixed;
-            color: $tertiary;
-            top: 10px;
-            right: 15px;
-            z-index: 5;
-            font-size: 3rem;
+            font-size: 1.3rem;
         }
     }
 
@@ -137,9 +141,13 @@
             width: 65%;
             .headerBox {
                 height: 100%;
-                width: 100%;
+                width: 85%;
             }
         } 
+    }
+    // first section queries
+    .whosWillow{
+        height: 100vh;
     }
     
     //Second Gallery Section Queries
@@ -159,8 +167,7 @@
                 left: -50px;  
             }
         }   
-    }
-         
+    }     
 }
 
 @media (max-width: 376px){

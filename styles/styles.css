@@ -393,13 +393,16 @@ nav a:hover,
 nav :focus {
   color: #e4a436;
 }
-nav .hideMe {
-  display: none;
+
+input[type=checkbox]:focus + label {
+  border: 1px dotted #345231 !important;
+  color: purple !important;
 }
 
 .homeHeader {
   background-color: #345231;
-  height: 70vh;
+  height: 80vh;
+  padding-bottom: 10px;
 }
 .homeHeader .headerContainer {
   display: -webkit-box;
@@ -430,6 +433,7 @@ nav .hideMe {
   max-width: 100%;
 }
 .headerImage .headerBox {
+  margin-top: 15px;
   width: 40%;
   position: absolute;
   top: 40px;
@@ -551,7 +555,8 @@ footer a:hover, footer a:focus {
 
 .whosWillow {
   background-color: #f6f6f6;
-  height: 70vh;
+  height: 60vh;
+  padding: 60px 0 40px 0;
 }
 .whosWillow .wrapper {
   height: 100%;
@@ -576,6 +581,7 @@ footer a:hover, footer a:focus {
 
 .infoSection {
   background-color: #fff;
+  padding: 50px 0 40px 0;
 }
 
 .homeFirstGallery {
@@ -585,6 +591,9 @@ footer a:hover, footer a:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+}
+.homeFirstGallery * {
+  border: 1px solid red;
 }
 .homeFirstGallery li {
   width: 50%;
@@ -626,6 +635,7 @@ footer a:hover, footer a:focus {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f6f6f6;
+  padding-bottom: 60px;
 }
 
 .willowJourneyContainer {
@@ -657,12 +667,16 @@ footer a:hover, footer a:focus {
      object-fit: cover;
 }
 
+aside {
+  padding-bottom: 80px;
+}
 aside img {
   width: 100vw;
 }
 
 .lemons {
   background-color: #fff;
+  padding-bottom: 70px;
 }
 .lemons .lemonFlex {
   display: -webkit-box;
@@ -884,10 +898,6 @@ aside img {
     width: 70%;
   }
 
-  .whosWillow {
-    height: 80vh;
-  }
-
   .homeFirstGallery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -912,7 +922,11 @@ aside img {
   }
 
   .willowJourney {
-    height: 100vh;
+    height: 80vh;
+  }
+
+  .journeyText {
+    margin-top: 15px;
   }
 
   .willowJourneyContainer {
@@ -951,6 +965,10 @@ aside img {
   nav .showMe {
     display: inline-block;
   }
+  nav input {
+    position: absolute;
+    right: 0;
+  }
   nav .navBar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -959,25 +977,6 @@ aside img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  nav .slideOut {
-    position: fixed;
-    width: 40%;
-    right: -40%;
-    background-color: #345231;
-    height: 100vh;
-  }
-  nav .slideOut li {
-    width: 100%;
-  }
-  nav .slideOut a {
-    display: inline-block;
-    width: 100%;
-    padding: 10px;
-    font-size: 1.6rem;
   }
   nav input[type=checkbox]:checked + .slideOut {
     right: 0;
@@ -990,6 +989,25 @@ aside img {
     right: 15px;
     z-index: 5;
     font-size: 3rem;
+  }
+  nav .slideOut {
+    position: fixed;
+    width: 40%;
+    right: -40%;
+    background-color: #345231;
+    opacity: 0.95;
+    height: 100vh;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  nav .slideOut li {
+    width: 100%;
+  }
+  nav .slideOut a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem;
   }
 
   .headerPosition {
@@ -1008,7 +1026,11 @@ aside img {
   }
   .headerContainer .headerImage .headerBox {
     height: 100%;
-    width: 100%;
+    width: 85%;
+  }
+
+  .whosWillow {
+    height: 100vh;
   }
 
   .lemonFlex {

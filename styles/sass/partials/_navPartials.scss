@@ -12,9 +12,17 @@ nav{
     :focus {
         color: $tertiary;
     }
-    .hideMe{
-        display: none;
-    }
 
+    
+    
+    
+    
 }
-
+input[type=checkbox] {
+    // opacity: 0;
+    // position: absolute;
+    &:focus+label {
+        border: 1px dotted $primary !important;
+        color: purple !important;
+    }
+}

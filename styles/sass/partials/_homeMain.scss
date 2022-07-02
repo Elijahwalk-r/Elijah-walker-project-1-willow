@@ -1,7 +1,8 @@
 // first section
 .whosWillow{
     background-color: $secondary;
-    height: 70vh;
+    height: 60vh;
+    padding: 60px 0 40px 0;
     .wrapper{
         height: 100%;
     }
@@ -19,8 +20,12 @@
 
 .infoSection{
     background-color: $solidWhite;
+    padding: 50px 0 40px 0;
 }
 .homeFirstGallery{
+    *{
+        border: 1px solid red;
+    }
     display: flex; 
     flex-wrap: wrap;
     width: 100%;
@@ -54,6 +59,7 @@
     display: flex;
     align-items: center;
     background-color: $secondary;
+    padding-bottom: 60px;
 }
 .willowJourneyContainer{
     width: 100%;
@@ -78,10 +84,9 @@
         }     
 }
         
-
-
 // ASIDE Section Styles
 aside{
+    padding-bottom: 80px ;
     img{
         width: 100vw;
     }
@@ -91,6 +96,7 @@ aside{
 
 .lemons{
     background-color: $solidWhite;
+    padding-bottom: 70px;
     .lemonFlex{
         display: flex;
         .lemonItems{
@@ -100,7 +106,6 @@ aside{
 }
 
 // FIFTH Section Styles
-
 .infoIconSection{
     height: 80vh;
     background-color: $secondary;

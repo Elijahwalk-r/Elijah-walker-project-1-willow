@@ -1,7 +1,8 @@
 // HOME Header Styles
 .homeHeader{
     background-color: $primary;
-    height: 70vh;
+    height: 80vh;
+    padding-bottom: 10px;
     .headerContainer{
         display: flex;
         justify-content: space-evenly;
@@ -20,11 +21,11 @@
             left: -40px;
         }
 }
-    
         
 .headerImage{
     max-width: 100%;
     .headerBox{
+        margin-top: 15px;
         width: 40%;
         position: absolute;
         top:40px;

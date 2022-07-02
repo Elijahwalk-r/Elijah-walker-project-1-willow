@@ -1,5 +1,40 @@
+// General Transitions
+button{
+    transition: transform 0.2s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+// Home Page Transitions
+nav{
+    label{
+        transition: transform 0.2s;
+    }
+    label:active{
+        transform: scale(0.8);
+    }
+}
+
+.lemonItems{
+    img{
+        transition: transform 1s;
+    }
+    img:hover{
+        transform: scale(1.1) rotateY(180deg);
+    }
+}
 
 // Blog Page Transitions
+.willowFlexChild1{
+    img{
+        transition: transform 0.7s ;
+    }
+    img:hover {
+        transform: scale(1.2);
+    }
+}
+
 .blogTextFlexChild2 {
    img {
        transition: transform 0.8s;

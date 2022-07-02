@@ -429,6 +429,7 @@ nav .hideMe {
   max-width: 100%;
 }
 .homeHeader .headerContainer .headerImage .headerBox {
+  width: 40%;
   position: absolute;
   top: 40px;
   right: 20px;
@@ -866,6 +867,7 @@ aside img {
   .homeHeader .headerContainer .headerImage .headerBox {
     position: unset;
     height: 80%;
+    width: 60%;
   }
 
   .whosWillow {
@@ -941,6 +943,10 @@ aside img {
   .homeHeader .headerContainer .headerPosition h1 {
     font-size: 3rem;
   }
+  .homeHeader .headerContainer .headerImage .headerBox {
+    height: 70%;
+    width: 85%;
+  }
 
   nav .showMe {
     display: inline-block;
@@ -953,6 +959,9 @@ aside img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   nav .slideOut {
     position: fixed;
@@ -971,14 +980,14 @@ aside img {
     font-size: 1.6rem;
   }
   nav input[type=checkbox]:checked + .slideOut {
-    left: 0;
+    right: 0;
     z-index: 4;
   }
   nav label[for=toggle] {
     position: fixed;
     color: #e4a436;
     top: 10px;
-    left: 15px;
+    right: 15px;
     z-index: 5;
     font-size: 3rem;
   }

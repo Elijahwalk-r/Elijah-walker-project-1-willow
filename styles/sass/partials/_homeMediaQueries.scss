@@ -20,7 +20,7 @@
                 .headerBox{
                     position: unset;
                     height: 80%;
-                    
+                    width: 60%;        
                 }
             }
         }
@@ -91,6 +91,12 @@
                     font-size: 3rem;
                 }
             }
+            .headerImage{
+                .headerBox{
+                    height: 70%;
+                    width: 85%;
+                }
+            }
         }
     }
     // Nav Media Queries
@@ -102,6 +108,7 @@
         .navBar{
             flex-direction: column;
             justify-content: center;
+            align-items: flex-start;
         }
         .slideOut {
             position: fixed;
@@ -122,14 +129,14 @@
             
         }
         input[type="checkbox"]:checked+.slideOut {
-            left: 0;
+            right: 0;
             z-index: 4;
         }
         label[for="toggle"] {
             position: fixed;
             color: $tertiary;
             top: 10px;
-            left: 15px;
+            right: 15px;
             z-index: 5;
             font-size: 3rem;
         }

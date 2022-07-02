@@ -2,6 +2,7 @@
     background-color: $secondary;
     padding: 40px 0;
 }
+
 .blogArticleSection{
     .willowFlexChild1,
     .willowFlexChild2,
@@ -12,72 +13,79 @@
     textarea{
         background-color: $solidWhite;
     }
+
     .wrapper{
         display: flex;
         justify-content: center;
     }
-    .aboutWillowFlexContainer{
-        width: 25%;
-        margin-right: 20px;
-        .willowFlexChild1{
-            padding: 10px;
-            h4{
-                margin-top: 15px;
-            }
-            p{
-                letter-spacing: 0px;
-                line-height: 32px;
-            }
-            a{
-               color: $primary;
-               font-weight: bold;
-            }
-            a:hover,:focus{
-              color: $tertiary;
-            }
-        }
-        .willowFlexChild2{
-            padding: 10px;
-            margin-top: 30px;
-            li{
-                line-height: 32px;
-                list-style-type: disc;
-                margin-left: 30px;
-            }
-        }
-    }
-    .blogTextFlexContainer{
-        width: 70%;
-        .blogTextFlexChild1{
-            padding: 15px;
-            margin-bottom: 30px ;
-            border-bottom: 6px solid $primary;
-        }
-        .blogTextFlexChild2{
-            margin-bottom: 30px;
-            .barbDaisy{
-                display: flex;
-                padding: 15px;
-                .barbDaisyDate{
-                    margin-left: 15px;
-                }
-                img{
-                    height: 100%;
-                }
-            }
-        }
-        .daisy{
-            border-bottom: 6px solid $primary;
-        }
-    }
-    .blogForm{
-        form{
-            width: 100%;
-            fieldset{
-                padding: 0;
-                margin: 0;
-            }
-        }
-    }
-
 }
+
+// START first article intro section
+.aboutWillowFlexContainer{
+    width: 25%;
+    margin-right: 20px;
+}
+
+.willowFlexChild1{
+    padding: 10px;
+    h4{
+        margin-top: 15px;
+    }
+    p{
+        letter-spacing: 0px;
+        line-height: 32px;
+    }
+    a{
+        color: $primary;
+        font-weight: bold;
+    }
+    a:hover,:focus{
+        color: $tertiary;
+    }
+}
+
+.willowFlexChild2{
+    padding: 10px;
+    margin-top: 30px;
+    li{
+        line-height: 32px;
+        list-style-type: disc;
+        margin-left: 30px;
+    }
+}
+// END
+
+// Main article section
+.blogTextFlexContainer{
+    width: 70%;
+}
+
+.blogTextFlexChild1{
+    padding: 15px;
+    margin-bottom: 30px ;
+    border-bottom: 6px solid $primary;
+}
+// END main article
+
+// START Small outro article sections 
+.blogTextFlexChild2{
+    margin-bottom: 30px;
+}
+
+.barbDaisy{
+    display: flex;
+    padding: 15px;
+    img{
+        height: 100%;
+    }
+}
+
+.barbDaisyDate{
+    margin-left: 15px;
+}
+
+.daisy{
+    border-bottom: 6px solid $primary;
+}
+// END
+    

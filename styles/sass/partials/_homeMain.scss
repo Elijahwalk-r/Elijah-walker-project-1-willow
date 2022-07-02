@@ -15,7 +15,7 @@
     }
 }
 
-// second section
+// second section, First Gallery
 
 .infoSection{
     background-color: $solidWhite;
@@ -30,20 +30,17 @@
     .bridge{
         background-color: $quaternary;
         box-shadow: 12px 10px 0px $quaternary, -110px 10px 0px $quaternary;
-        
-       
     }
     .lily{
         background-color: $primary;
         box-shadow: 12px 10px 0px $primary, 110px 10px 0px $primary;
     }
-
     .sectionText1{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .hello{
+    .galleryText{
         width: 80%;
     }
     .textAlign{
@@ -51,33 +48,37 @@
     }
 }
 
-// Third Section
+// Third Section, Willows Journey
 .willowJourney{
     height: 70vh;
     display: flex;
     align-items: center;
     background-color: $secondary;
-    .willowJourneyContainer{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        .journeyText{
-            width: 65%;
-            .textItems{
-                height: 100%;
-            }
-        }
-        .yellow{
-            height: 100%;
-            width: 25%;
-            box-shadow: 10px 10px 0 $quaternary;
-            img{
-                width: 100%;
-                object-fit: cover;
-            }     
-        }
+}
+.willowJourneyContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.journeyText{
+    width: 65%;
+    .textItems{
+        height: 100%;
     }
 }
+
+.yellow{
+    height: 100%;
+    width: 25%;
+    box-shadow: 10px 10px 0 $quaternary;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }     
+}
+        
+
 
 // ASIDE Section Styles
 aside{
@@ -86,7 +87,7 @@ aside{
     }
 }
 
-//FOURTH Section Styles
+//FOURTH Section Styles, 2nd Gallery
 
 .lemons{
     background-color: $solidWhite;

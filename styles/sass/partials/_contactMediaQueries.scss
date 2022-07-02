@@ -1,75 +1,66 @@
 @media (max-width: 1100px){
     .contactMain{
         height: 100vh;
-        .contactContainer{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .contactDetails{
-                width: 70%;
-                height: 25%;
-                padding: 30px 10px;
-                margin-bottom: 15px;
-                .address{
-                    height: 100%;
-                    line-height: 40px;
-                    .unit10 {
-                        display: inline-block;
-                        margin-top: 0;
-                    }
-                                    
-                }
-            }  
-        }  
     }
-}
 
+    .contactContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactDetails{
+        width: 70%;
+        height: 40%;
+        padding: 30px 10px;
+        margin-bottom: 15px;
+        .address{
+            height: 100%;
+            line-height: 40px;                        
+        }
+    }  
+}  
+ 
 @media (max-width: 720px){
     .contactHeader{
         height: 30vh;
-        .headerText{
-            h1{
-                font-size: 3rem;
-                margin-left: 5px;
+        h1{
+            font-size: 3rem;
+            margin-left: 5px;
+        }
+    }
+
+
+    .contactContainer {
+        .contactDetails {
+            width: 90%; 
+        }
+    }
+
+    .contactPageForm {
+        width: 100%;
+        .formInput {
+            flex-direction: column;    
+            .name,
+            .email {
+                width: 100%;
+                margin-right: 0;
             }
         }
     }
-    .contactMain {
-        .contactContainer {
-            .contactDetails {
-               width: 90%; 
-            }
-        }
-        form {
-            width: 100%;
-            .formInput {
-                flex-direction: column;    
-                    .name,
-                    .email {
-                        width: 100%;
-                        margin-right: 0;
-                    }
-            }
-        }
-    }
+    
 }
 
 @media (max-width: 360px) {
     .contactHeader {
-            .headerText {
-                justify-content: center;
-                align-items: center;
-                h1 {
-                    font-size: 2rem;
-                    margin: 0;
-                }
+        .headerText {
+            justify-content: center;
+            align-items: center;
+            h1 {
+                font-size: 2rem;
+                margin: 0;
             }
+        }
     }
-    .contactDetails {            
-            .address {
-                .unit10 {
-                    color: red;
-                }
-            }
-    }
+
 }

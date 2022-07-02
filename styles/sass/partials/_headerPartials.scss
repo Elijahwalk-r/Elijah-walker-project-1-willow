@@ -7,30 +7,34 @@
         justify-content: space-evenly;
         height: 100%;
         position: relative;
-        .headerPosition{
-            height: fit-content;
-            position: relative;
-            align-self: center;
-            align-self: center;
-                img{
-                    position: absolute;
-                    bottom: -40px;
-                    left: -40px;
-                }
+    }    
+}        
+
+.headerPosition{
+    height: fit-content;
+    position: relative;
+    align-self: center;
+        img{
+            position: absolute;
+            bottom: -40px;
+            left: -40px;
         }
-        .headerImage{
-            max-width: 100%;
-            .headerBox{
-                width: 40%;
-                position: absolute;
-                top:40px;
-                right: 20px;
-                height: 100%;
-                box-shadow: 10px 10px 0 $solidWhite;
-            }
-        }
+}
+    
+        
+.headerImage{
+    max-width: 100%;
+    .headerBox{
+        width: 40%;
+        position: absolute;
+        top:40px;
+        right: 20px;
+        height: 100%;
+        box-shadow: 10px 10px 0 $solidWhite;
     }
 }
+    
+
 
 
 

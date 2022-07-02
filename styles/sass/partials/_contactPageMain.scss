@@ -2,48 +2,52 @@
     background-color: $secondary;
     padding: 60px 0 90px 0;
 }
+
 .contactMain {
     height: 55vh;
-    
-    .contactContainer{
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .contactDetails{
-        margin-top: 5px;
-        background-color: $solidWhite;
-        height: 70%;
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        padding:50px 20px;
-        .contactIcons{
-            height: 10%;
-            i{
-            margin-right: 25px;
-            }
-        }
-        .address {
-            height: 100%;
-            line-height: 40px;            
-            .unit10 {
-                display: inline-block;
-                margin-top: 18px;
-            }
-        }
-        p{
-            line-height: 4px;
-            color: #696969;
-        }
-        .infoEmail{
-            a{
-             color: black;
-             font-weight: bold;   
-            }
-            
-            margin: 30px 0;
-        }  
-    } 
 }
+
+.contactContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactDetails{
+    margin-top: 5px;
+    background-color: $solidWhite;
+    height: 70%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding:50px 20px;
+
+    .contactIcons{
+        height: 10%;
+        i{
+        margin-right: 25px;
+        }
+    }
+
+    .address {
+        height: 100%;
+        width: 100%;
+        line-height: 40px;            
+    }
+
+    p{
+        line-height: 20px;
+        color: #696969;
+    }
+
+    .infoEmail{
+        margin: 30px 0;
+        a{
+            color: black;
+            font-weight: bold;   
+        }
+    }  
+} 
+
    

@@ -394,9 +394,16 @@ nav :focus {
   color: #e4a436;
 }
 
+input[type=checkbox] {
+  opacity: 0;
+}
 input[type=checkbox]:focus + label {
-  border: 1px dotted #345231 !important;
-  color: purple !important;
+  border: 1px dotted #345231;
+  color: purple;
+}
+
+.showMe {
+  visibility: hidden;
 }
 
 .homeHeader {
@@ -510,7 +517,7 @@ fieldset {
 
 .nameInput,
 .emailInput {
-  width: 100%;
+  width: calc(100% - 10px);
   height: 50px;
   padding: 20px;
   border: none;
@@ -527,10 +534,15 @@ fieldset {
 }
 
 textarea {
+  width: calc(100% - 10px);
   margin-bottom: 10px;
   padding: 20px;
   resize: none;
   border: none;
+}
+
+form button {
+  width: calc(100% - 10px);
 }
 
 .blogForm form {
@@ -538,7 +550,7 @@ textarea {
 }
 .blogForm form fieldset {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 5px;
 }
 
 footer {
@@ -740,8 +752,8 @@ aside img {
 .contactDetails {
   margin-top: 5px;
   background-color: #fff;
-  height: 70%;
-  width: 30%;
+  height: 80%;
+  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,7 +975,7 @@ aside img {
 }
 @media (max-width: 720px) {
   nav .showMe {
-    display: inline-block;
+    visibility: visible;
   }
   nav input {
     position: absolute;
@@ -978,7 +990,7 @@ aside img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  nav input[type=checkbox]:checked + .slideOut {
+  nav input[type=checkbox]:checked ~ .slideOut {
     right: 0;
     z-index: 4;
   }

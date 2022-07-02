@@ -80,7 +80,7 @@
 // Nav Media Queries
     nav{
         .showMe{
-            display: inline-block;
+            visibility: visible;
         }
         input{
             position: absolute;
@@ -91,7 +91,7 @@
             justify-content: center;
         }  
         
-        input[type="checkbox"]:checked+.slideOut {
+        input[type="checkbox"]:checked~.slideOut {
             right: 0;
             z-index: 4;
         }

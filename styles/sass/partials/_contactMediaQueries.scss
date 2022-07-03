@@ -12,8 +12,8 @@
     .contactDetails{
         width: 70%;
         height: 40%;
-        padding: 30px 10px;
-        margin-bottom: 15px;
+        padding: 10px 10px;
+        margin: 0px 0px 15px 0px;
         .address{
             height: 100%;
             line-height: 40px;                        
@@ -34,6 +34,7 @@
     .contactContainer {
         .contactDetails {
             width: 90%; 
+            height: 35%;
         }
     }
 

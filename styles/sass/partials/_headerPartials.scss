@@ -1,7 +1,7 @@
 // HOME Header Styles
 .homeHeader{
     background-color: $primary;
-    height: 80vh;
+    height: 70vh;
     padding-bottom: 10px;
     .headerContainer{
         display: flex;
@@ -24,26 +24,16 @@
         
 .headerImage{
     max-width: 100%;
-    .headerBox{
+    img{
         margin-top: 15px;
         width: 40%;
         position: absolute;
-        top:40px;
-        right: 20px;
+        top:50px;
+        right: 10px;
         height: 100%;
         box-shadow: 10px 10px 0 $solidWhite;
     }
 }
-    
-
-
-
-
-
-
-
-
-
 
 // BLOG Header Styles
 .blogHeader{

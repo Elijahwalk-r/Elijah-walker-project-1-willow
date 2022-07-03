@@ -4,10 +4,11 @@
 }
 
 .contactMain {
-    height: 55vh;
+    height: 60vh;
 }
 
 .contactContainer{
+    border: 1px solid red;
     height: 100%;
     width: 100%;
     display: flex;
@@ -15,10 +16,11 @@
 }
 
 .contactDetails{
-    margin-top: 5px;
+    border: 1px solid blue;
+    margin: 5px 0 0 15px;
     background-color: $solidWhite;
     height: 80%;
-    width: 35%;
+    width: 33%;
     display: flex;
     flex-direction: column;
     padding:50px 20px;
@@ -49,5 +51,6 @@
         }
     }  
 } 
+
 
    

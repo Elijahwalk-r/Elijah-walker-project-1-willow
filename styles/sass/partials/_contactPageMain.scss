@@ -1,22 +1,21 @@
 .contactBackground{
     background-color: $secondary;
-    padding: 60px 0 90px 0;
+    padding-bottom: 90px;
 }
 
 .contactMain {
-    height: 60vh;
+    min-height: 70vh;
 }
 
 .contactContainer{
-    border: 1px solid red;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-top: 10px ;
 }
 
 .contactDetails{
-    border: 1px solid blue;
     margin: 5px 0 0 15px;
     background-color: $solidWhite;
     height: 80%;
@@ -43,14 +42,19 @@
         color: #696969;
     }
 
-    .infoEmail{
-        margin: 30px 0;
-        a{
-            color: black;
-            font-weight: bold;   
-        }
-    }  
 } 
+.infoEmail{
+    margin: 30px 0;
+    a{
+        color: black;
+        font-weight: bold;   
+    }
+}  
+.contactPageForm{
+    fieldset{
+        height: 90%;
+    }
+}
 
 
-   
+

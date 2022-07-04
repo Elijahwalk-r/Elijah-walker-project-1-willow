@@ -23,9 +23,6 @@
     padding: 50px 0 40px 0;
 }
 .homeFirstGallery{
-    *{
-        border: 1px solid red;
-    }
     display: flex; 
     flex-wrap: wrap;
     width: 100%;
@@ -55,11 +52,10 @@
 
 // Third Section, Willows Journey
 .willowJourney{
-    height: 70vh;
+    height: 65vh;
     display: flex;
     align-items: center;
     background-color: $secondary;
-    padding-bottom: 60px;
 }
 .willowJourneyContainer{
     width: 100%;
@@ -86,7 +82,9 @@
         
 // ASIDE Section Styles
 aside{
-    padding-bottom: 80px ;
+    display: flex;
+    align-items: center;
+
     img{
         width: 100vw;
     }
@@ -96,7 +94,9 @@ aside{
 
 .lemons{
     background-color: $solidWhite;
-    padding-bottom: 70px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
     .lemonFlex{
         display: flex;
         .lemonItems{
@@ -105,15 +105,18 @@ aside{
     }
 }
 
-// FIFTH Section Styles
+// FIFTH Section with Icon Styles
 .infoIconSection{
     height: 80vh;
     background-color: $secondary;
+    display: flex;
+    align-items: center;
     ul{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        padding-left: 10px;
     }
     li{
         width: calc((100% / 2) - 40px);

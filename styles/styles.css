@@ -440,11 +440,11 @@ input[type=checkbox]:focus + label {
   max-width: 100%;
 }
 .headerImage img {
-  margin-top: 15px;
-  width: 40%;
+  margin-top: 10px;
+  width: 35%;
   position: absolute;
   top: 50px;
-  right: 10px;
+  right: 75px;
   height: 100%;
   -webkit-box-shadow: 10px 10px 0 #fff;
           box-shadow: 10px 10px 0 #fff;
@@ -604,9 +604,6 @@ footer a:hover, footer a:focus {
       flex-wrap: wrap;
   width: 100%;
 }
-.homeFirstGallery * {
-  border: 1px solid red;
-}
 .homeFirstGallery li {
   width: 50%;
 }
@@ -639,7 +636,7 @@ footer a:hover, footer a:focus {
 }
 
 .willowJourney {
-  height: 70vh;
+  height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,7 +644,6 @@ footer a:hover, footer a:focus {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f6f6f6;
-  padding-bottom: 60px;
 }
 
 .willowJourneyContainer {
@@ -680,7 +676,12 @@ footer a:hover, footer a:focus {
 }
 
 aside {
-  padding-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 aside img {
   width: 100vw;
@@ -688,7 +689,15 @@ aside img {
 
 .lemons {
   background-color: #fff;
-  padding-bottom: 70px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .lemons .lemonFlex {
   display: -webkit-box;
@@ -702,6 +711,12 @@ aside img {
 .infoIconSection {
   height: 80vh;
   background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .infoIconSection ul {
   display: -webkit-box;
@@ -715,6 +730,7 @@ aside img {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 10px;
 }
 .infoIconSection li {
   width: calc(50% - 40px);
@@ -731,15 +747,14 @@ aside img {
 
 .contactBackground {
   background-color: #f6f6f6;
-  padding: 60px 0 90px 0;
+  padding-bottom: 90px;
 }
 
 .contactMain {
-  height: 60vh;
+  min-height: 70vh;
 }
 
 .contactContainer {
-  border: 1px solid red;
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -748,10 +763,10 @@ aside img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 10px;
 }
 
 .contactDetails {
-  border: 1px solid blue;
   margin: 5px 0 0 15px;
   background-color: #fff;
   height: 80%;
@@ -780,12 +795,17 @@ aside img {
   line-height: 20px;
   color: #696969;
 }
-.contactDetails .infoEmail {
+
+.infoEmail {
   margin: 30px 0;
 }
-.contactDetails .infoEmail a {
+.infoEmail a {
   color: black;
   font-weight: bold;
+}
+
+.contactPageForm fieldset {
+  height: 90%;
 }
 
 .blogBackground {
@@ -936,11 +956,7 @@ aside img {
   }
 
   .willowJourney {
-    height: 80vh;
-  }
-
-  .journeyText {
-    margin-top: 15px;
+    height: 95vh;
   }
 
   .willowJourneyContainer {
@@ -960,6 +976,10 @@ aside img {
   }
   .willowJourneyContainer .yellow {
     margin-bottom: 20px;
+  }
+
+  .journeyText {
+    margin-top: 15px;
   }
 
   .infoIconSection {
@@ -1035,11 +1055,11 @@ aside img {
   }
 
   .headerContainer .headerImage {
-    height: 60%;
-    width: 65%;
+    height: 68%;
+    width: 60%;
   }
   .headerContainer .headerImage .headerBox {
-    height: 90%;
+    height: 85%;
     width: 75%;
   }
 
@@ -1069,12 +1089,22 @@ aside img {
   }
 }
 @media (max-width: 376px) {
+  nav .slideOut .menu {
+    font-size: 1.14rem;
+  }
+
+  .headerContainer h1 {
+    font-size: 2.8rem;
+  }
   .headerContainer .headerImage {
-    width: 85%;
+    width: 95%;
   }
 
   .willowJourneyContainer {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .willowJourneyContainer .yellow img {
     display: none;
@@ -1222,6 +1252,10 @@ aside img {
     height: 100%;
     line-height: 40px;
   }
+
+  .contactPageForm {
+    width: 80%;
+  }
 }
 @media (max-width: 720px) {
   .contactHeader {
@@ -1232,13 +1266,21 @@ aside img {
     margin-left: 5px;
   }
 
+  .contactBackground {
+    padding-bottom: 180px;
+  }
+
+  .contactContainer {
+    padding: 10px 0 10px 0;
+  }
   .contactContainer .contactDetails {
     width: 90%;
-    height: 35%;
+    height: 45%;
   }
 
   .contactPageForm {
     width: 100%;
+    height: 60%;
   }
   .contactPageForm .formInput {
     -webkit-box-orient: vertical;

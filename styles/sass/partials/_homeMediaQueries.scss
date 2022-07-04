@@ -44,12 +44,9 @@
 
     // Willows Journey Section Queries
     .willowJourney{
-        height: 80vh;
+        height: 95vh;
     }
-    .journeyText{
-        margin-top: 15px;
-    }
-
+    
     .willowJourneyContainer{
         flex-direction: column;
         align-items: center;
@@ -63,7 +60,10 @@
             margin-bottom: 20px;
         }
     }
-
+    .journeyText{
+        margin-top: 15px;
+    }
+    
     // Last Section Media Queries
     .infoIconSection{
         height: 100%;
@@ -137,10 +137,10 @@
     }
     .headerContainer{
         .headerImage {
-            height: 60%;
-            width: 65%;
+            height: 68%;
+            width: 60%;
             .headerBox {
-                height: 90%;
+                height: 85%;
                 width: 75%;
             }
         } 
@@ -171,13 +171,20 @@
 }
 
 @media (max-width: 376px){
+    nav .slideOut .menu{
+            font-size: 1.14rem;
+    }
     .headerContainer {   
+        h1{
+            font-size: 2.8rem;
+        }
         .headerImage {
-            width: 85%;
+            width: 95%;
         }
     }
     .willowJourneyContainer{
         text-align: center;
+        display: flex;
         .yellow{
             img{
                 display: none;

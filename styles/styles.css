@@ -385,6 +385,8 @@ nav .navBar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  bottom: 10px;
 }
 nav .navBar li {
   margin: 15px;
@@ -443,7 +445,7 @@ input[type=checkbox]:focus + label {
   margin-top: 10px;
   width: 35%;
   position: absolute;
-  top: 50px;
+  top: 40px;
   right: 75px;
   height: 100%;
   -webkit-box-shadow: 10px 10px 0 #fff;
@@ -630,6 +632,7 @@ footer a:hover, footer a:focus {
 }
 .homeFirstGallery .galleryText {
   width: 80%;
+  padding: 10px;
 }
 .homeFirstGallery .textAlign {
   text-align: right;
@@ -682,6 +685,7 @@ aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 40px;
 }
 aside img {
   width: 100vw;
@@ -907,7 +911,7 @@ aside img {
             justify-content: center;
   }
   .headerContainer .headerPosition {
-    margin-top: 80px;
+    margin-top: 90px;
   }
   .headerContainer .headerImage {
     position: unset;
@@ -928,8 +932,8 @@ aside img {
   }
   .headerContainer .headerImage img {
     position: unset;
-    height: 80%;
-    width: 50%;
+    height: 90%;
+    width: 45%;
   }
 
   .homeFirstGallery {
@@ -1055,7 +1059,7 @@ aside img {
   }
 
   .headerContainer .headerImage {
-    height: 68%;
+    height: 74%;
     width: 60%;
   }
   .headerContainer .headerImage .headerBox {
@@ -1065,6 +1069,10 @@ aside img {
 
   .whosWillow {
     height: 100vh;
+  }
+
+  .willowJourney {
+    height: 108vh;
   }
 
   .lemonFlex {
@@ -1089,8 +1097,11 @@ aside img {
   }
 }
 @media (max-width: 376px) {
-  nav .slideOut .menu {
-    font-size: 1.14rem;
+  nav input[type=checkbox]:checked ~ .slideOut {
+    width: 100vw;
+  }
+  nav .slideOut li:first-child {
+    margin-top: 90px;
   }
 
   .headerContainer h1 {
@@ -1098,6 +1109,11 @@ aside img {
   }
   .headerContainer .headerImage {
     width: 95%;
+  }
+
+  .whosWillow {
+    height: 120vh;
+    padding-top: 50px;
   }
 
   .willowJourneyContainer {
@@ -1315,7 +1331,8 @@ button {
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-button:hover {
+button:hover,
+:focus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -1331,15 +1348,51 @@ nav label:active {
           transform: scale(0.8);
 }
 
+.galleryPic {
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+}
+
+.galleryPic:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 10%;
+}
+
+.yellow img {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.yellow img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .lemonItems img {
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
 }
-.lemonItems img:hover {
+.lemonItems img:hover,
+.lemonItems :focus {
   -webkit-transform: scale(1.1) rotateY(180deg);
           transform: scale(1.1) rotateY(180deg);
+}
+
+.icon i {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+.icon i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .willowFlexChild1 img {

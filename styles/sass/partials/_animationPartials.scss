@@ -2,7 +2,8 @@
 button{
     transition: transform 0.2s;
 }
-button:hover{
+button:hover,
+:focus{
     transform: scale(1.1);
 }
 
@@ -15,13 +16,39 @@ nav{
         transform: scale(0.8);
     }
 }
+.galleryPic{
+   transition: transform 0.7s ease-in-out;
+}
+.galleryPic:hover{
+    transform: scale(1.1);
+    border-radius: 10%;
+}
+
+.yellow{
+    img{
+        transition: transform 0.4s;
+    }
+    img:hover{
+        transform: scale(1.2);
+    }
+}
 
 .lemonItems{
     img{
         transition: transform 1s;
     }
-    img:hover{
+    img:hover,
+    :focus{
         transform: scale(1.1) rotateY(180deg);
+    }
+}
+
+.icon{
+    i{
+        transition: transform 1s;
+    }
+    i:hover{
+        transform: rotate(360deg);
     }
 }
 

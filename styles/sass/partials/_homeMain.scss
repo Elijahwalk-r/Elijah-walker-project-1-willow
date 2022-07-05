@@ -44,6 +44,7 @@
     }
     .galleryText{
         width: 80%;
+        padding: 10px
     }
     .textAlign{
         text-align: right;
@@ -84,6 +85,7 @@
 aside{
     display: flex;
     align-items: center;
+    padding-bottom: 40px;
 
     img{
         width: 100vw;

@@ -4,6 +4,8 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        bottom: 10px;
         li{
             margin:15px;
         }

@@ -28,7 +28,11 @@
     <nav>
         <!-- START Wrapper -->
         <div class="wrapper">
-            <ul class="navBar">
+            <!-- Nav to be hidden that will turn into drop down once width of screen changes -->
+            <input type="checkbox" id="toggle" name="toggle" class="hideMe">
+            <label for="toggle" class="fa-solid fa-bars hideMe showMe"></label>
+
+            <ul class="navBar slideOut">
                 <li>
                     <a href="./index.html" class="menu">Home</a>
                 </li>

@@ -86,11 +86,11 @@
             position: absolute;
             right: 0;
         }
-        .navBar{
+          .navBar{
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }  
-        
         input[type="checkbox"]:checked~.slideOut {
             right: 0;
             z-index: 4;
@@ -102,13 +102,13 @@
             top: 10px;
             right: 15px;
             z-index: 5;
-            font-size: 3rem;
+            font-size: 2rem;
         }
        
         .slideOut {
             position: fixed;
-            width: 40%;
-            right: -40%;
+            width: 100%;
+            right: -110%;
             background-color: $primary;
             opacity: 0.95;
             height: 100vh;

@@ -16,13 +16,6 @@ nav{
         transform: scale(0.8);
     }
 }
-.galleryPic{
-   transition: transform 0.7s ease-in-out;
-}
-.galleryPic:hover{
-    transform: scale(1.1);
-    border-radius: 10%;
-}
 
 .yellow{
     img{

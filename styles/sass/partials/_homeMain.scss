@@ -30,12 +30,18 @@
         width: calc(100% / 2);
     }
     .bridge{
-        background-color: $quaternary;
         box-shadow: 12px 10px 0px $quaternary, -110px 10px 0px $quaternary;
+        img{
+            height: 100%;
+            width: 100%;
+        }
     }
     .lily{
-        background-color: $primary;
         box-shadow: 12px 10px 0px $primary, 110px 10px 0px $primary;
+        img {
+                height: 100%;
+                width: 100%;
+            }
     }
     .sectionText1{
         display: flex;

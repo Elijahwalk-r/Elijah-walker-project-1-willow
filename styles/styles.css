@@ -1016,9 +1016,6 @@ aside img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   nav input[type=checkbox]:checked ~ .slideOut {
     right: 0;
@@ -1044,15 +1041,13 @@ aside img {
   }
   nav .slideOut li {
     width: 100%;
+    text-align: center;
   }
   nav .slideOut a {
     display: inline-block;
     width: 100%;
     padding: 10px;
     font-size: 1.3rem;
-  }
-  .headerPosition {
-    z-index: 6;
   }
   .headerPosition .musings {
     left: -29px;

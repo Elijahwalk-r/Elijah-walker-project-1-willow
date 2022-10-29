@@ -89,7 +89,6 @@
         .navBar{
             flex-direction: column;
             justify-content: center;
-            align-items: center;
         }  
         
         input[type="checkbox"]:checked~.slideOut {
@@ -116,7 +115,8 @@
             transition: 0.6s;  
         }
         .slideOut li{
-            width: 100%;       
+            width: 100%;
+            text-align: center;       
         }
         .slideOut a {
             display: inline-block;
@@ -128,7 +128,6 @@
 
     // Header
     .headerPosition{
-        z-index: 6;
         .musings{
             left:-29px;
         }
